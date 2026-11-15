@@ -1,0 +1,9 @@
+node_modules
+data/*.db
+data/*.db-journal
+.git
+.github
+tests
+*.log
+.DS_Store
+.env*

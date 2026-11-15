@@ -1,0 +1,22 @@
+{
+  "name": "eldercare-connect",
+  "version": "1.0.0",
+  "description": "ElderCare Connect - Elderly Care & Medication Management Platform for PromptWars x Catalyst Hackathon",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "seed": "node src/db/seed.js",
+    "test": "node tests/runner.js"
+  },
+  "keywords": [
+    "elderly-care",
+    "medication-management",
+    "accessibility",
+    "voice-assistant",
+    "telugu-support",
+    "cloud-run"
+  ],
+  "author": "Hackathon Developer",
+  "license": "MIT"
+}
