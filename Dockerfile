@@ -1,34 +1,29 @@
+
 # ==============================================================
-# Google Cloud Run Multi-Stage Production Dockerfile
+# ElderCare Connect - Production Dockerfile
 # ==============================================================
 
-FROM node:20-alpine AS runner
+FROM node:24-alpine AS runner
 
-# Set production environment variables
 ENV NODE_ENV=production
 ENV PORT=8080
 
-# Create working directory
 WORKDIR /app
 
-# Copy package descriptors and source code
-COPY package.json ./
-COPY server.js ./
-COPY src/ ./src/
-COPY public/ ./public/
+# Copy project files from GitHub repository root
+COPY . .
 
-# Ensure data directory exists and set non-root user permissions
+# Create database directory and set permissions
 RUN mkdir -p /app/data && chown -R node:node /app
 
-# Run as non-root user for security hardening
+# Run as non-root user
 USER node
 
-# Expose standard Cloud Run port
 EXPOSE 8080
 
-# Health check probe for Google Cloud Run container readiness
-HEALTHCHECK --interval=30s --timeout=5s --start-period=5s --retries=3 \
+# Health check
+HEALTHCHECK --interval=30s --timeout=5s --start-period=10s --retries=3 \
   CMD wget --no-verbose --tries=1 --spider http://localhost:8080/api/health || exit 1
 
-# Start the full-stack server
+# Start application
 CMD ["node", "server.js"]
