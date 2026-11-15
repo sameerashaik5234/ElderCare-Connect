@@ -1,14 +1,14 @@
 # 🏥 ElderCare Connect
 
 > **PromptWars x Catalyst Hackathon Project**  
-> An accessible, responsive, and secure Elderly Care & Medication Management Platform with bilingual English & Telugu support, Web Speech API voice assistance, automated missed-dose alerts, doctor appointment management, and Google Cloud Run deployment readiness.
+> An accessible, responsive, and secure Elderly Care & Medication Management Platform with trilingual English, Hindi, Telugu support, Web Speech API voice assistance, automated missed-dose alerts, doctor appointment management, and Google Cloud Run deployment readiness.
 
 ---
 
 ## 🌟 Key Highlights & Hackathon Innovations
 
 1. **Accessibility First (WCAG 2.1 AAA Standard):**
-   - **Bilingual Interface:** Instant language switching between **English** and **Telugu (తెలుగు)** with 100% dictionary coverage.
+   - **Trilingual Interface:** Complete language switching between English, Telugu (తెలుగు), and Hindi (हिन्दी), including medication schedules and voice assistance.
    - **Voice Assistant (Web Speech API):** Hands-free speech synthesis reads today's medicines aloud in natural cadence; speech recognition listens for voice commands (*"Read my medicines"*, *"Took my medicine"*, *"Emergency"*).
    - **Tactile Senior Mode:** Extra-large touch targets ($\ge 64$px buttons), bold readable typography with a dynamic font-size switcher (`Normal`, `Large`, `Extra Large`), and a 7:1+ High-Contrast senior theme.
    - **Visual Pill Identification:** Pill color indicators and distinct shape icons (round, capsule, oval) to prevent reliance on color alone.
