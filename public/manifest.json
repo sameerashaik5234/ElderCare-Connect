@@ -1,0 +1,16 @@
+{
+  "name": "ElderCare Connect - Medication & Healthcare Management",
+  "short_name": "ElderCare",
+  "description": "Elderly Care and Medication Management Platform with Telugu and Voice Guidance",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f8fafc",
+  "theme_color": "#1d4ed8",
+  "icons": [
+    {
+      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%231d4ed8'/><text x='50' y='65' font-size='50' text-anchor='middle' fill='white'>💊</text></svg>",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml"
+    }
+  ]
+}
